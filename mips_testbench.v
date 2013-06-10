@@ -21,12 +21,12 @@ module mips_testbench();
 
       rst = 0;
 
-      repeat (1000)				
+      repeat (10000)				
 			@(posedge clk);
 				
 					
 
-      $stop();
+      //$stop();
       
    end
 
@@ -35,14 +35,14 @@ module mips_testbench();
         begin
            @(posedge clk);
            $display("$t0 (REG8) = %x",dut.datapath_inst.regfile_inst.rf[8]);
+			  $display("$PC (PC) = %x",dut.datapath_inst.pc_reg);
         end
    end
 	
 	initial begin
-	int0=0;
-		repeat(10)
-		  @(posedge clk);
-				int0 = 1;
+		int0=0;
+		forever
+        #500 int0 = ~int0;  
    end
    
 

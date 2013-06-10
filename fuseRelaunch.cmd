@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/nik/SchemLab1/mips_testbench_isim_beh.exe" -prj "/home/nik/SchemLab1/mips_testbench_beh.prj" "work.mips_testbench" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/run/media/nik/a4d71458-72be-4a3a-9d10-56ac135e94ea/home/nik/SchemLab1/mips_testbench_isim_beh.exe" -prj "/run/media/nik/a4d71458-72be-4a3a-9d10-56ac135e94ea/home/nik/SchemLab1/mips_testbench_beh.prj" "work.mips_testbench" "work.glbl" 
